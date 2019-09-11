@@ -1,0 +1,22 @@
+BoxLayout:
+    orientation : 'vertical'
+    BoxLayout:
+        orientation : 'horizontal'
+        TextInput:
+            id : input_number
+            text : '0.0'
+            font_size : 48
+        BoxLayout:
+            orientation : 'vertical'
+            size_hint_x : 0.5
+            Button:
+                text : 'C to F'
+                on_press : app.celcius_to_fahrenheit()
+            Button:
+                text : 'F to C'
+                on_press : app.fahrenheit_to_celcius()
+    Label:
+        id : output_label
+        font_size : 48
+        text : ''
+        color : (1, 1, 0, 1)
